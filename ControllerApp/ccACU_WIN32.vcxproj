@@ -79,14 +79,9 @@
       <FileType>CppCode</FileType>
     </ClInclude>
     <ClCompile Include="..\..\ccNOos\ioDevice\io_device_class.cpp" />
-    <ClInclude Include="..\..\ccNOos\packetsAPI\packets_api.h" />
     <ClInclude Include="..\..\ccOS\ccLibs\devices\adafruit_ft232h\adafruit_ft232h.c">
       <FileType>CppCode</FileType>
     </ClInclude>
-    <ClInclude Include="..\..\ccNOos\packetsAPI\packets_api.c">
-      <FileType>CppCode</FileType>
-    </ClInclude>
-    <ClCompile Include="..\..\ccNOos\packetsAPI\packets_api_class.cpp" />
     <ClCompile Include="..\..\ccOS\ccLibs\devices\adafruit_ft232h\adafruit_ft232h.cpp" />
     <ClCompile Include="..\..\ccOS\exeThread\exe_thread.cpp" />
     <ClCompile Include="..\..\ccOS\osExecutionSystem\os_execution_system.cpp" />
@@ -183,26 +178,26 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
@@ -242,7 +237,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>PLATFORM_ccOS; </PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>..\..\ccNOos\ccLibs\mcs;..\..\ccNOos\ccLibs\acs;..\..\ccNOos\ccLibs\devices\ADRF6650;..\..\ccNOos\ccLibs\devices\HMC1119;..\..\ccNOos\ccLibs\devices\HMR3300;..\..\ccNOos\ccLibs\devices\LTC2360;..\..\ccNOos\ccLibs\devices\MCP23017;..\..\ccNOos\ccLibs\devices\MOP_VFD;..\..\ccNOos\ccLibs\devices\NEO_LEA_M8T;..\..\ccNOos\computeModule;..\..\ccNOos\packetsAPI;..\..\ccNOos\consoleMenu;..\..\ccNOos\executionSystem;..\..\ccNOos\ioDevice;..\..\ccNOos\tests\testPlatforms;..\..\ccOS\ccLibs\devices\adafruit_ft232h;..\..\ccOS\exeThread;..\..\ccOS\osExecutionSystem;..\..\ccOS\serialComms;..\..\ccOS\stdIOExtProc;..\..\ccOS\tcpComms;..\..\ccACU;..\..\ccACU\apiModules;..\..\ccACU\deviceModules;..\..\SatComACS;..\..\SatComACS\apiModules;..\..\SatComACS\deviceModules;..\..\ccACU\apiModules\CGI_ServerClass;..\..\ccACU\apiModules\SNMP_AgentsServer;..\..\ccACU\apiModules\UI_ServerClass;..\..\ccACU\deviceModules\APT_WMM;..\..\ccACU\deviceModules\TPM;..\..\ccACU\deviceModules\TxRx;..\..\SatComACS\apiModules\ConsoleMenu;..\..\SatComACS\apiModules\LCDKeyPad;..\..\SatComACS\deviceModules\APT_WMM;..\..\SatComACS\deviceModules\TPM;..\..\SatComACS\deviceModules\TxRx;..\..\ccACU\deviceModules\ManagedSwitch;..\..\ccACU\deviceModules\Modem;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\ccNOos\ccLibs\mcs;..\..\ccNOos\ccLibs\acs;..\..\ccNOos\ccLibs\devices\ADRF6650;..\..\ccNOos\ccLibs\devices\HMC1119;..\..\ccNOos\ccLibs\devices\HMR3300;..\..\ccNOos\ccLibs\devices\LTC2360;..\..\ccNOos\ccLibs\devices\MCP23017;..\..\ccNOos\ccLibs\devices\MOP_VFD;..\..\ccNOos\ccLibs\devices\NEO_LEA_M8T;..\..\ccNOos\computeModule;..\..\ccNOos\consoleMenu;..\..\ccNOos\executionSystem;..\..\ccNOos\ioDevice;..\..\ccNOos\tests\testPlatforms;..\..\ccOS\ccLibs\devices\adafruit_ft232h;..\..\ccOS\exeThread;..\..\ccOS\osExecutionSystem;..\..\ccOS\serialComms;..\..\ccOS\stdIOExtProc;..\..\ccOS\tcpComms;..\..\ccACU;..\..\ccACU\apiModules;..\..\ccACU\deviceModules;..\..\SatComACS;..\..\SatComACS\apiModules;..\..\SatComACS\deviceModules;..\..\ccACU\apiModules\CGI_ServerClass;..\..\ccACU\apiModules\SNMP_AgentsServer;..\..\ccACU\apiModules\UI_ServerClass;..\..\ccACU\deviceModules\APT_WMM;..\..\ccACU\deviceModules\TPM;..\..\ccACU\deviceModules\TxRx;..\..\SatComACS\apiModules\ConsoleMenu;..\..\SatComACS\apiModules\LCDKeyPad;..\..\SatComACS\deviceModules\APT_WMM;..\..\SatComACS\deviceModules\TPM;..\..\SatComACS\deviceModules\TxRx;..\..\ccACU\deviceModules\ManagedSwitch;..\..\ccACU\deviceModules\Modem;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>-D_WINSOCK_DEPRECATED_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
@@ -259,7 +254,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>PLATFORM_ccOS; </PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>..\..\ccNOos\ccLibs\mcs;..\..\ccNOos\ccLibs\acs;..\..\ccNOos\ccLibs\devices\ADRF6650;..\..\ccNOos\ccLibs\devices\HMC1119;..\..\ccNOos\ccLibs\devices\HMR3300;..\..\ccNOos\ccLibs\devices\LTC2360;..\..\ccNOos\ccLibs\devices\MCP23017;..\..\ccNOos\ccLibs\devices\MOP_VFD;..\..\ccNOos\ccLibs\devices\NEO_LEA_M8T;..\..\ccNOos\computeModule;..\..\ccNOos\packetsAPI;..\..\ccNOos\consoleMenu;..\..\ccNOos\executionSystem;..\..\ccNOos\ioDevice;..\..\ccNOos\tests\testPlatforms;..\..\ccOS\ccLibs\devices\adafruit_ft232h;..\..\ccOS\exeThread;..\..\ccOS\osExecutionSystem;..\..\ccOS\serialComms;..\..\ccOS\stdIOExtProc;..\..\ccOS\tcpComms;..\..\ccACU;..\..\ccACU\apiModules;..\..\ccACU\deviceModules;..\..\SatComACS;..\..\SatComACS\apiModules;..\..\SatComACS\deviceModules;..\..\ccACU\apiModules\CGI_ServerClass;..\..\ccACU\apiModules\SNMP_AgentsServer;..\..\ccACU\apiModules\UI_ServerClass;..\..\ccACU\deviceModules\APT_WMM;..\..\ccACU\deviceModules\TPM;..\..\ccACU\deviceModules\TxRx;..\..\SatComACS\apiModules\ConsoleMenu;..\..\SatComACS\apiModules\LCDKeyPad;..\..\SatComACS\deviceModules\APT_WMM;..\..\SatComACS\deviceModules\TPM;..\..\SatComACS\deviceModules\TxRx;..\..\ccACU\deviceModules\ManagedSwitch;..\..\ccACU\deviceModules\Modem;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\ccNOos\ccLibs\mcs;..\..\ccNOos\ccLibs\acs;..\..\ccNOos\ccLibs\devices\ADRF6650;..\..\ccNOos\ccLibs\devices\HMC1119;..\..\ccNOos\ccLibs\devices\HMR3300;..\..\ccNOos\ccLibs\devices\LTC2360;..\..\ccNOos\ccLibs\devices\MCP23017;..\..\ccNOos\ccLibs\devices\MOP_VFD;..\..\ccNOos\ccLibs\devices\NEO_LEA_M8T;..\..\ccNOos\computeModule;..\..\ccNOos\consoleMenu;..\..\ccNOos\executionSystem;..\..\ccNOos\ioDevice;..\..\ccNOos\tests\testPlatforms;..\..\ccOS\ccLibs\devices\adafruit_ft232h;..\..\ccOS\exeThread;..\..\ccOS\osExecutionSystem;..\..\ccOS\serialComms;..\..\ccOS\stdIOExtProc;..\..\ccOS\tcpComms;..\..\ccACU;..\..\ccACU\apiModules;..\..\ccACU\deviceModules;..\..\SatComACS;..\..\SatComACS\apiModules;..\..\SatComACS\deviceModules;..\..\ccACU\apiModules\CGI_ServerClass;..\..\ccACU\apiModules\SNMP_AgentsServer;..\..\ccACU\apiModules\UI_ServerClass;..\..\ccACU\deviceModules\APT_WMM;..\..\ccACU\deviceModules\TPM;..\..\ccACU\deviceModules\TxRx;..\..\SatComACS\apiModules\ConsoleMenu;..\..\SatComACS\apiModules\LCDKeyPad;..\..\SatComACS\deviceModules\APT_WMM;..\..\SatComACS\deviceModules\TPM;..\..\SatComACS\deviceModules\TxRx;..\..\ccACU\deviceModules\ManagedSwitch;..\..\ccACU\deviceModules\Modem;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>-D_WINSOCK_DEPRECATED_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
@@ -276,7 +271,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>PLATFORM_ccOS; </PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>..\..\ccNOos\ccLibs\mcs;..\..\ccNOos\ccLibs\acs;..\..\ccNOos\ccLibs\devices\ADRF6650;..\..\ccNOos\ccLibs\devices\HMC1119;..\..\ccNOos\ccLibs\devices\HMR3300;..\..\ccNOos\ccLibs\devices\LTC2360;..\..\ccNOos\ccLibs\devices\MCP23017;..\..\ccNOos\ccLibs\devices\MOP_VFD;..\..\ccNOos\ccLibs\devices\NEO_LEA_M8T;..\..\ccNOos\computeModule;..\..\ccNOos\packetsAPI;..\..\ccNOos\consoleMenu;..\..\ccNOos\executionSystem;..\..\ccNOos\ioDevice;..\..\ccNOos\tests\testPlatforms;..\..\ccOS\ccLibs\devices\adafruit_ft232h;..\..\ccOS\exeThread;..\..\ccOS\osExecutionSystem;..\..\ccOS\serialComms;..\..\ccOS\stdIOExtProc;..\..\ccOS\tcpComms;..\..\ccACU;..\..\ccACU\apiModules;..\..\ccACU\deviceModules;..\..\SatComACS;..\..\SatComACS\apiModules;..\..\SatComACS\deviceModules;..\..\ccACU\apiModules\CGI_ServerClass;..\..\ccACU\apiModules\SNMP_AgentsServer;..\..\ccACU\apiModules\UI_ServerClass;..\..\ccACU\deviceModules\APT_WMM;..\..\ccACU\deviceModules\TPM;..\..\ccACU\deviceModules\TxRx;..\..\SatComACS\apiModules\ConsoleMenu;..\..\SatComACS\apiModules\LCDKeyPad;..\..\SatComACS\deviceModules\APT_WMM;..\..\SatComACS\deviceModules\TPM;..\..\SatComACS\deviceModules\TxRx;..\..\ccACU\deviceModules\ManagedSwitch;..\..\ccACU\deviceModules\Modem;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\ccNOos\ccLibs\mcs;..\..\ccNOos\ccLibs\acs;..\..\ccNOos\ccLibs\devices\ADRF6650;..\..\ccNOos\ccLibs\devices\HMC1119;..\..\ccNOos\ccLibs\devices\HMR3300;..\..\ccNOos\ccLibs\devices\LTC2360;..\..\ccNOos\ccLibs\devices\MCP23017;..\..\ccNOos\ccLibs\devices\MOP_VFD;..\..\ccNOos\ccLibs\devices\NEO_LEA_M8T;..\..\ccNOos\computeModule;..\..\ccNOos\consoleMenu;..\..\ccNOos\executionSystem;..\..\ccNOos\ioDevice;..\..\ccNOos\tests\testPlatforms;..\..\ccOS\ccLibs\devices\adafruit_ft232h;..\..\ccOS\exeThread;..\..\ccOS\osExecutionSystem;..\..\ccOS\serialComms;..\..\ccOS\stdIOExtProc;..\..\ccOS\tcpComms;..\..\ccACU;..\..\ccACU\apiModules;..\..\ccACU\deviceModules;..\..\SatComACS;..\..\SatComACS\apiModules;..\..\SatComACS\deviceModules;..\..\ccACU\apiModules\CGI_ServerClass;..\..\ccACU\apiModules\SNMP_AgentsServer;..\..\ccACU\apiModules\UI_ServerClass;..\..\ccACU\deviceModules\APT_WMM;..\..\ccACU\deviceModules\TPM;..\..\ccACU\deviceModules\TxRx;..\..\SatComACS\apiModules\ConsoleMenu;..\..\SatComACS\apiModules\LCDKeyPad;..\..\SatComACS\deviceModules\APT_WMM;..\..\SatComACS\deviceModules\TPM;..\..\SatComACS\deviceModules\TxRx;..\..\ccACU\deviceModules\ManagedSwitch;..\..\ccACU\deviceModules\Modem;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>-D_WINSOCK_DEPRECATED_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
@@ -293,7 +288,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>PLATFORM_ccOS; </PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>..\..\ccNOos\ccLibs\mcs;..\..\ccNOos\ccLibs\acs;..\..\ccNOos\ccLibs\devices\ADRF6650;..\..\ccNOos\ccLibs\devices\HMC1119;..\..\ccNOos\ccLibs\devices\HMR3300;..\..\ccNOos\ccLibs\devices\LTC2360;..\..\ccNOos\ccLibs\devices\MCP23017;..\..\ccNOos\ccLibs\devices\MOP_VFD;..\..\ccNOos\ccLibs\devices\NEO_LEA_M8T;..\..\ccNOos\computeModule;..\..\ccNOos\packetsAPI;..\..\ccNOos\consoleMenu;..\..\ccNOos\executionSystem;..\..\ccNOos\ioDevice;..\..\ccNOos\tests\testPlatforms;..\..\ccOS\ccLibs\devices\adafruit_ft232h;..\..\ccOS\exeThread;..\..\ccOS\osExecutionSystem;..\..\ccOS\serialComms;..\..\ccOS\stdIOExtProc;..\..\ccOS\tcpComms;..\..\ccACU;..\..\ccACU\apiModules;..\..\ccACU\deviceModules;..\..\SatComACS;..\..\SatComACS\apiModules;..\..\SatComACS\deviceModules;..\..\ccACU\apiModules\CGI_ServerClass;..\..\ccACU\apiModules\SNMP_AgentsServer;..\..\ccACU\apiModules\UI_ServerClass;..\..\ccACU\deviceModules\APT_WMM;..\..\ccACU\deviceModules\TPM;..\..\ccACU\deviceModules\TxRx;..\..\SatComACS\apiModules\ConsoleMenu;..\..\SatComACS\apiModules\LCDKeyPad;..\..\SatComACS\deviceModules\APT_WMM;..\..\SatComACS\deviceModules\TPM;..\..\SatComACS\deviceModules\TxRx;..\..\ccACU\deviceModules\ManagedSwitch;..\..\ccACU\deviceModules\Modem;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\ccNOos\ccLibs\mcs;..\..\ccNOos\ccLibs\acs;..\..\ccNOos\ccLibs\devices\ADRF6650;..\..\ccNOos\ccLibs\devices\HMC1119;..\..\ccNOos\ccLibs\devices\HMR3300;..\..\ccNOos\ccLibs\devices\LTC2360;..\..\ccNOos\ccLibs\devices\MCP23017;..\..\ccNOos\ccLibs\devices\MOP_VFD;..\..\ccNOos\ccLibs\devices\NEO_LEA_M8T;..\..\ccNOos\computeModule;..\..\ccNOos\consoleMenu;..\..\ccNOos\executionSystem;..\..\ccNOos\ioDevice;..\..\ccNOos\tests\testPlatforms;..\..\ccOS\ccLibs\devices\adafruit_ft232h;..\..\ccOS\exeThread;..\..\ccOS\osExecutionSystem;..\..\ccOS\serialComms;..\..\ccOS\stdIOExtProc;..\..\ccOS\tcpComms;..\..\ccACU;..\..\ccACU\apiModules;..\..\ccACU\deviceModules;..\..\SatComACS;..\..\SatComACS\apiModules;..\..\SatComACS\deviceModules;..\..\ccACU\apiModules\CGI_ServerClass;..\..\ccACU\apiModules\SNMP_AgentsServer;..\..\ccACU\apiModules\UI_ServerClass;..\..\ccACU\deviceModules\APT_WMM;..\..\ccACU\deviceModules\TPM;..\..\ccACU\deviceModules\TxRx;..\..\SatComACS\apiModules\ConsoleMenu;..\..\SatComACS\apiModules\LCDKeyPad;..\..\SatComACS\deviceModules\APT_WMM;..\..\SatComACS\deviceModules\TPM;..\..\SatComACS\deviceModules\TxRx;..\..\ccACU\deviceModules\ManagedSwitch;..\..\ccACU\deviceModules\Modem;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>-D_WINSOCK_DEPRECATED_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>

@@ -276,12 +276,6 @@
     <ClInclude Include="..\..\ccACU\deviceModules\Modem\ModemClass.hpp">
       <Filter>Header Files\ccACU\deviceModules</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\ccNOos\packetsAPI\packets_api.h">
-      <Filter>Header Files\ccNOos</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\ccNOos\packetsAPI\packets_api.c">
-      <Filter>Header Files\ccNOos</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Application_Platform_Main.cpp">
@@ -391,9 +385,6 @@
     </ClCompile>
     <ClCompile Include="..\..\ccACU\deviceModules\Modem\ModemClass.cpp">
       <Filter>Header Files\ccACU\deviceModules</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\ccNOos\packetsAPI\packets_api_class.cpp">
-      <Filter>Source Files\ccNOos</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
