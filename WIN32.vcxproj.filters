@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\ccNOos">
+      <UniqueIdentifier>{3613366a-fd54-408b-b56b-26d98faec721}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ccOS">
+      <UniqueIdentifier>{30abd23a-b044-4227-9bfc-d904287c1b31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Lib_GripperFW">
+      <UniqueIdentifier>{1996ea57-4f0d-481b-a629-2f062754ce57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ccNOos">
+      <UniqueIdentifier>{c9bc41a2-59be-4778-a692-72859b6f2b50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ccOS">
+      <UniqueIdentifier>{3734e951-afa4-4321-8554-654589373693}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Lib_GripperFW">
+      <UniqueIdentifier>{90997a4f-9b3e-4107-ae11-37cb7f95b439}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Lib_GripperFW\apiModules">
+      <UniqueIdentifier>{8f43dff4-83e0-47c6-83c1-a77f0f1a57bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Lib_GripperFW\deviceModules">
+      <UniqueIdentifier>{86a8d528-6bc7-420c-b4b5-e4c4d090e67b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Lib_GripperFW\apiModules">
+      <UniqueIdentifier>{8676e6bd-1424-4cb1-b7fd-fbf8f3ee6e35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Lib_GripperFW\deviceModules">
+      <UniqueIdentifier>{1fdc806f-4594-458a-b246-037971535cf9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ccNOos\executionSystem">
+      <UniqueIdentifier>{69c43391-57b3-4d21-b578-c02b6f6fd32b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ccNOos\executionSystem">
+      <UniqueIdentifier>{3f04607b-d7f9-4513-9045-31642dfc49e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ccNOos\computeModule">
+      <UniqueIdentifier>{a6654fea-aea1-450c-86fa-1c6e0294e137}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ccNOos\computeModule">
+      <UniqueIdentifier>{20afeab8-c6b0-4038-8b9f-cac3b988de73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ccNOos\consoleMenu">
+      <UniqueIdentifier>{c5b5583c-632c-4622-85b4-dce3dc001afc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ccNOos\consoleMenu">
+      <UniqueIdentifier>{884c6c03-e4d3-42f3-a1d5-cd9e33bc3ded}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ccNOos\ioDevice">
+      <UniqueIdentifier>{46c95acb-2b4e-4d5b-aaf7-ac4fb4b3a5a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ccNOos\ioDevice">
+      <UniqueIdentifier>{35b044bc-1a27-4b06-9721-e90688055364}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ccNOos\packetsAPI">
+      <UniqueIdentifier>{745e86b9-478e-4063-b515-4dccb2294cd9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ccNOos\packetsAPI">
+      <UniqueIdentifier>{eab82422-0bf5-4e0b-b170-cecd3ea383a4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GripperFW_WIN32_Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ccNOos\executionSystem\execution_system_class.cpp">
+      <Filter>Source Files\ccNOos\executionSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ccNOos\computeModule\compute_module_class.cpp">
+      <Filter>Source Files\ccNOos\computeModule</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ccNOos\consoleMenu\console_menu_class.cpp">
+      <Filter>Source Files\ccNOos\consoleMenu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ccNOos\ioDevice\io_device_class.cpp">
+      <Filter>Source Files\ccNOos\ioDevice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ccNOos\packetsAPI\packets_api_class.cpp">
+      <Filter>Source Files\ccNOos\packetsAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Lib_GripperFW\Application_Serialization.cpp">
+      <Filter>Source Files\Lib_GripperFW</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Lib_GripperFW\Application_Solution.cpp">
+      <Filter>Source Files\Lib_GripperFW</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\ccNOos\executionSystem\execution_system.c">
+      <Filter>Header Files\ccNOos\executionSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ccNOos\executionSystem\execution_system.h">
+      <Filter>Header Files\ccNOos\executionSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ccNOos\executionSystem\version_config.h">
+      <Filter>Header Files\ccNOos\executionSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ccNOos\computeModule\compute_module.h">
+      <Filter>Header Files\ccNOos\computeModule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ccNOos\computeModule\compute_module.c">
+      <Filter>Header Files\ccNOos\computeModule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ccNOos\consoleMenu\console_menu.h">
+      <Filter>Header Files\ccNOos\consoleMenu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ccNOos\consoleMenu\console_menu.c">
+      <Filter>Header Files\ccNOos\consoleMenu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ccNOos\ioDevice\io_device.h">
+      <Filter>Header Files\ccNOos\ioDevice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ccNOos\ioDevice\io_device.c">
+      <Filter>Header Files\ccNOos\ioDevice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ccNOos\packetsAPI\packets_api.c">
+      <Filter>Header Files\ccNOos\packetsAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ccNOos\packetsAPI\packets_api.h">
+      <Filter>Header Files\ccNOos\packetsAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Lib_GripperFW\Application_Serialization.h">
+      <Filter>Header Files\Lib_GripperFW</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Lib_GripperFW\Application_Solution.h">
+      <Filter>Header Files\Lib_GripperFW</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Lib_GripperFW\Application_Serialization.c">
+      <Filter>Header Files\Lib_GripperFW</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Lib_GripperFW\Application_Solution.c">
+      <Filter>Header Files\Lib_GripperFW</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
