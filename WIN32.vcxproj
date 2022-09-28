@@ -70,17 +70,36 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(ProjectDir)$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(ProjectDir)$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(ProjectDir)$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(ProjectDir)$(Configuration)\</OutDir>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>
+      </PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>..\ccNOos\executionSystem;..\ccNOos\consoleMenu;..\ccNOos\computeModule;..\ccNOos\ioDevice;..\ccNOos\packetsAPI;..\ccOS\ccLibs\iq-module-communication-cpp\inc;..\Lib_GripperFW;..\ccNOos\tests\testPlatforms;..\ccOS\osExecutionSystem;..\ccOS\exeThread;..\Lib_GripperFW\apiModules;..\Lib_GripperFW\deviceModules</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>ws2_32.lib; $(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
+    <PostBuildEvent>
+      <Command>$(SolutionDir)DeployTestProjectPreLink\DeployTestProjectPreLink.exe $(SolutionDir)
+$(SolutionDir)Teensy\TeensyBuild.bat build</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -88,27 +107,41 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>
+      </PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>..\ccNOos\executionSystem;..\ccNOos\consoleMenu;..\ccNOos\computeModule;..\ccNOos\ioDevice;..\ccNOos\packetsAPI;..\ccOS\ccLibs\iq-module-communication-cpp\inc;..\Lib_GripperFW;..\ccNOos\tests\testPlatforms;..\ccOS\osExecutionSystem;..\ccOS\exeThread;..\Lib_GripperFW\apiModules;..\Lib_GripperFW\deviceModules</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>ws2_32.lib; $(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
+    <PostBuildEvent>
+      <Command>$(SolutionDir)DeployTestProjectPreLink\DeployTestProjectPreLink.exe $(SolutionDir)
+$(SolutionDir)TeensyBuild.bat build</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>
+      </PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>..\ccNOos\executionSystem;..\ccNOos\consoleMenu;..\ccNOos\computeModule;..\ccNOos\ioDevice;..\ccNOos\packetsAPI;..\ccOS\ccLibs\iq-module-communication-cpp\inc;..\Lib_GripperFW;..\ccNOos\tests\testPlatforms;..\ccOS\osExecutionSystem;..\ccOS\exeThread;..\Lib_GripperFW\apiModules;..\Lib_GripperFW\deviceModules</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>ws2_32.lib; $(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
+    <PostBuildEvent>
+      <Command>$(SolutionDir)DeployTestProjectPreLink\DeployTestProjectPreLink.exe $(SolutionDir)
+$(SolutionDir)TeensyBuild.bat build</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -116,20 +149,43 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>
+      </PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>..\ccNOos\executionSystem;..\ccNOos\consoleMenu;..\ccNOos\computeModule;..\ccNOos\ioDevice;..\ccNOos\packetsAPI;..\ccOS\ccLibs\iq-module-communication-cpp\inc;..\Lib_GripperFW;..\ccNOos\tests\testPlatforms;..\ccOS\osExecutionSystem;..\ccOS\exeThread;..\Lib_GripperFW\apiModules;..\Lib_GripperFW\deviceModules</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>ws2_32.lib; $(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
+    <PostBuildEvent>
+      <Command>$(SolutionDir)DeployTestProjectPreLink\DeployTestProjectPreLink.exe $(SolutionDir)
+$(SolutionDir)TeensyBuild.bat build</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\ccNOos\tests\testPlatforms\Platform_ccOS.hpp" />
+    <ClInclude Include="..\ccOS\exeThread\exe_thread.hpp" />
+    <ClInclude Include="..\ccOS\osExecutionSystem\os_execution_system.hpp" />
+    <ClInclude Include="..\ccOS\osExecutionSystem\version_config.hpp" />
+    <ClInclude Include="..\Lib_GripperFW\apiModules\ConsoleMenuAPI.h" />
+    <ClInclude Include="..\Lib_GripperFW\apiModules\PacketInterfaceAPI.h" />
     <ClInclude Include="..\Lib_GripperFW\Application_Serialization.c">
       <FileType>CppCode</FileType>
     </ClInclude>
+    <ClCompile Include="..\ccOS\exeThread\exe_thread.cpp" />
+    <ClCompile Include="..\ccOS\osExecutionSystem\os_execution_system.cpp" />
+    <ClInclude Include="..\Lib_GripperFW\apiModules\PacketInterfaceAPI.c">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="..\Lib_GripperFW\apiModules\ConsoleMenuAPI.c">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClCompile Include="..\Lib_GripperFW\apiModules\ConsoleMenuAPI.cpp" />
+    <ClCompile Include="..\Lib_GripperFW\apiModules\PacketInterfaceAPI.cpp" />
     <ClCompile Include="..\Lib_GripperFW\Application_Serialization.cpp" />
     <ClInclude Include="..\Lib_GripperFW\Application_Solution.c">
       <FileType>CppCode</FileType>
@@ -162,6 +218,7 @@
     <ClInclude Include="..\ccNOos\packetsAPI\packets_api.h" />
     <ClInclude Include="..\Lib_GripperFW\Application_Serialization.h" />
     <ClInclude Include="..\Lib_GripperFW\Application_Solution.h" />
+    <ClInclude Include="GripperFW_WIN32_Main.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\ccNOos\executionSystem\execution_system.h" />
