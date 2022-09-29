@@ -97,8 +97,8 @@
       <AdditionalDependencies>ws2_32.lib; $(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
-      <Command>$(SolutionDir)DeployTestProjectPreLink\DeployTestProjectPreLink.exe $(SolutionDir)
-$(SolutionDir)Teensy\TeensyBuild.bat build</Command>
+      <Command>$(SolutionDir)DeployProject\DeployProject.exe $(SolutionDir)CR\Lib_GripperFW_Tests
+</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -120,8 +120,8 @@ $(SolutionDir)Teensy\TeensyBuild.bat build</Command>
       <AdditionalDependencies>ws2_32.lib; $(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
-      <Command>$(SolutionDir)DeployTestProjectPreLink\DeployTestProjectPreLink.exe $(SolutionDir)
-$(SolutionDir)TeensyBuild.bat build</Command>
+      <Command>$(SolutionDir)DeployProject\DeployProject.exe $(SolutionDir)CR\Lib_GripperFW_Tests
+</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -139,8 +139,8 @@ $(SolutionDir)TeensyBuild.bat build</Command>
       <AdditionalDependencies>ws2_32.lib; $(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
-      <Command>$(SolutionDir)DeployTestProjectPreLink\DeployTestProjectPreLink.exe $(SolutionDir)
-$(SolutionDir)TeensyBuild.bat build</Command>
+      <Command>$(SolutionDir)DeployProject\DeployProject.exe $(SolutionDir)CR\Lib_GripperFW_Tests
+</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -162,8 +162,8 @@ $(SolutionDir)TeensyBuild.bat build</Command>
       <AdditionalDependencies>ws2_32.lib; $(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
-      <Command>$(SolutionDir)DeployTestProjectPreLink\DeployTestProjectPreLink.exe $(SolutionDir)
-$(SolutionDir)TeensyBuild.bat build</Command>
+      <Command>$(SolutionDir)DeployProject\DeployProject.exe $(SolutionDir)CR\Lib_GripperFW_Tests
+</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
