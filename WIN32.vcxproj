@@ -89,7 +89,7 @@
       <PreprocessorDefinitions>
       </PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>..\ccNOos\executionSystem;..\ccNOos\consoleMenu;..\ccNOos\computeModule;..\ccNOos\ioDevice;..\ccNOos\packetsAPI;..\ccOS\ccLibs\iq-module-communication-cpp\inc;..\Lib_GripperFW;..\ccNOos\tests\testPlatforms;..\ccOS\osExecutionSystem;..\ccOS\exeThread;..\Lib_GripperFW\apiModules;..\Lib_GripperFW\deviceModules</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\ccNOos\executionSystem;..\ccNOos\consoleMenu;..\ccNOos\computeModule;..\ccNOos\ioDevice;..\ccNOos\packetsAPI;..\ccOS\ccLibs\iq-module-communication-cpp\inc;..\Lib_GripperFW;..\ccNOos\tests\testPlatforms;..\ccOS\osExecutionSystem;..\ccOS\exeThread;..\Lib_GripperFW\apiModules;..\Lib_GripperFW\deviceModules;..\Lib_GripperFW\controlModules</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -110,7 +110,7 @@
       <PreprocessorDefinitions>
       </PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>..\ccNOos\executionSystem;..\ccNOos\consoleMenu;..\ccNOos\computeModule;..\ccNOos\ioDevice;..\ccNOos\packetsAPI;..\ccOS\ccLibs\iq-module-communication-cpp\inc;..\Lib_GripperFW;..\ccNOos\tests\testPlatforms;..\ccOS\osExecutionSystem;..\ccOS\exeThread;..\Lib_GripperFW\apiModules;..\Lib_GripperFW\deviceModules</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\ccNOos\executionSystem;..\ccNOos\consoleMenu;..\ccNOos\computeModule;..\ccNOos\ioDevice;..\ccNOos\packetsAPI;..\ccOS\ccLibs\iq-module-communication-cpp\inc;..\Lib_GripperFW;..\ccNOos\tests\testPlatforms;..\ccOS\osExecutionSystem;..\ccOS\exeThread;..\Lib_GripperFW\apiModules;..\Lib_GripperFW\deviceModules;..\Lib_GripperFW\controlModules</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -131,7 +131,7 @@
       <PreprocessorDefinitions>
       </PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>..\ccNOos\executionSystem;..\ccNOos\consoleMenu;..\ccNOos\computeModule;..\ccNOos\ioDevice;..\ccNOos\packetsAPI;..\ccOS\ccLibs\iq-module-communication-cpp\inc;..\Lib_GripperFW;..\ccNOos\tests\testPlatforms;..\ccOS\osExecutionSystem;..\ccOS\exeThread;..\Lib_GripperFW\apiModules;..\Lib_GripperFW\deviceModules</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\ccNOos\executionSystem;..\ccNOos\consoleMenu;..\ccNOos\computeModule;..\ccNOos\ioDevice;..\ccNOos\packetsAPI;..\ccOS\ccLibs\iq-module-communication-cpp\inc;..\Lib_GripperFW;..\ccNOos\tests\testPlatforms;..\ccOS\osExecutionSystem;..\ccOS\exeThread;..\Lib_GripperFW\apiModules;..\Lib_GripperFW\deviceModules;..\Lib_GripperFW\controlModules</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -152,7 +152,7 @@
       <PreprocessorDefinitions>
       </PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>..\ccNOos\executionSystem;..\ccNOos\consoleMenu;..\ccNOos\computeModule;..\ccNOos\ioDevice;..\ccNOos\packetsAPI;..\ccOS\ccLibs\iq-module-communication-cpp\inc;..\Lib_GripperFW;..\ccNOos\tests\testPlatforms;..\ccOS\osExecutionSystem;..\ccOS\exeThread;..\Lib_GripperFW\apiModules;..\Lib_GripperFW\deviceModules</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\ccNOos\executionSystem;..\ccNOos\consoleMenu;..\ccNOos\computeModule;..\ccNOos\ioDevice;..\ccNOos\packetsAPI;..\ccOS\ccLibs\iq-module-communication-cpp\inc;..\Lib_GripperFW;..\ccNOos\tests\testPlatforms;..\ccOS\osExecutionSystem;..\ccOS\exeThread;..\Lib_GripperFW\apiModules;..\Lib_GripperFW\deviceModules;..\Lib_GripperFW\controlModules</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -213,11 +213,26 @@
       <FileType>CppCode</FileType>
     </ClInclude>
     <ClCompile Include="..\ccNOos\executionSystem\execution_system_class.cpp" />
+    <ClInclude Include="..\Lib_GripperFW\controlModules\CoordinatedGripperControl.h" />
+    <ClInclude Include="..\Lib_GripperFW\deviceModules\SmartMotorsDEV.c">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="..\Lib_GripperFW\controlModules\CoordinatedGripperControl.c">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClCompile Include="..\Lib_GripperFW\controlModules\CoordinatedGripperControl.cpp" />
+    <ClCompile Include="..\Lib_GripperFW\deviceModules\SmartMotorsDEV.cpp" />
+    <ClInclude Include="..\Lib_GripperFW\deviceModules\SuctionExtentionDEV.c">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClCompile Include="..\Lib_GripperFW\deviceModules\SuctionExtentionDEV.cpp" />
     <ClCompile Include="GripperFW_WIN32_Main.cpp" />
     <ClInclude Include="..\ccNOos\ioDevice\io_device.h" />
     <ClInclude Include="..\ccNOos\packetsAPI\packets_api.h" />
     <ClInclude Include="..\Lib_GripperFW\Application_Serialization.h" />
     <ClInclude Include="..\Lib_GripperFW\Application_Solution.h" />
+    <ClInclude Include="..\Lib_GripperFW\deviceModules\SmartMotorsDEV.h" />
+    <ClInclude Include="..\Lib_GripperFW\deviceModules\SuctionExtentionDEV.h" />
     <ClInclude Include="GripperFW_WIN32_Main.c" />
   </ItemGroup>
   <ItemGroup>

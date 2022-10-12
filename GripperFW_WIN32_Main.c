@@ -50,11 +50,10 @@ struct devicedatastruct ConsoleMenuDevDataStruct;
 // Platform and Application Specific IO Device Functions
 void linkAPIioDevices(struct ccGripperStruct* gripperStructPtrIn)
 {
-    //satcomacsStructPtrIn->ConsoleMenu.devptr = &ConsoleMenuDevDataStruct;
-    //satcomacsStructPtrIn->LCDKeyPad.devptr = &LCDKeyPadDevDataStruct;
-    //ConsoleMenuDevDataStruct.triggerWriteOperation = ui8TRUE;
-    //satcomacsStructPtrIn->ConsoleMenu.showHelp = ui8TRUE;
-    //LCDKeyPadDevDataStruct.triggerWriteOperation = ui8TRUE;
+    gripperStructPtrIn->ConsoleMenu.devptr = &ConsoleMenuDevDataStruct;
+    gripperStructPtrIn->PacketsAPI.devptr = &PacketsInterfactDevDataStruct;
+    ConsoleMenuDevDataStruct.triggerWriteOperation = ui8TRUE;
+    gripperStructPtrIn->ConsoleMenu.showHelp = ui8TRUE;    
 }
 std::thread stdInThread;
 UI_8 stdInThreadRunning = ui8FALSE;

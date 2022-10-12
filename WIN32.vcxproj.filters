@@ -69,6 +69,15 @@
     <ClCompile Include="..\ccOS\exeThread\exe_thread.cpp">
       <Filter>Source Files\ccOS</Filter>
     </ClCompile>
+    <ClCompile Include="..\Lib_GripperFW\deviceModules\SmartMotorsDEV.cpp">
+      <Filter>Source Files\Lib_GripperFW</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Lib_GripperFW\deviceModules\SuctionExtentionDEV.cpp">
+      <Filter>Source Files\Lib_GripperFW</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Lib_GripperFW\controlModules\CoordinatedGripperControl.cpp">
+      <Filter>Source Files\Lib_GripperFW</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Lib_GripperFW\Application_Serialization.h">
@@ -141,6 +150,24 @@
       <Filter>Header Files\Lib_GripperFW</Filter>
     </ClInclude>
     <ClInclude Include="..\Lib_GripperFW\apiModules\ConsoleMenuAPI.c">
+      <Filter>Header Files\Lib_GripperFW</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Lib_GripperFW\deviceModules\SmartMotorsDEV.h">
+      <Filter>Header Files\Lib_GripperFW</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Lib_GripperFW\deviceModules\SuctionExtentionDEV.h">
+      <Filter>Header Files\Lib_GripperFW</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Lib_GripperFW\deviceModules\SmartMotorsDEV.c">
+      <Filter>Header Files\Lib_GripperFW</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Lib_GripperFW\deviceModules\SuctionExtentionDEV.c">
+      <Filter>Header Files\Lib_GripperFW</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Lib_GripperFW\controlModules\CoordinatedGripperControl.h">
+      <Filter>Header Files\Lib_GripperFW</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Lib_GripperFW\controlModules\CoordinatedGripperControl.c">
       <Filter>Header Files\Lib_GripperFW</Filter>
     </ClInclude>
   </ItemGroup>
