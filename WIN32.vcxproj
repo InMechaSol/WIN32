@@ -213,14 +213,9 @@
       <FileType>CppCode</FileType>
     </ClInclude>
     <ClCompile Include="..\ccNOos\executionSystem\execution_system_class.cpp" />
-    <ClInclude Include="..\Lib_GripperFW\controlModules\CoordinatedGripperControl.h" />
     <ClInclude Include="..\Lib_GripperFW\deviceModules\SmartMotorsDEV.c">
       <FileType>CppCode</FileType>
     </ClInclude>
-    <ClInclude Include="..\Lib_GripperFW\controlModules\CoordinatedGripperControl.c">
-      <FileType>CppCode</FileType>
-    </ClInclude>
-    <ClCompile Include="..\Lib_GripperFW\controlModules\CoordinatedGripperControl.cpp" />
     <ClCompile Include="..\Lib_GripperFW\deviceModules\SmartMotorsDEV.cpp" />
     <ClInclude Include="..\Lib_GripperFW\deviceModules\SuctionExtentionDEV.c">
       <FileType>CppCode</FileType>
