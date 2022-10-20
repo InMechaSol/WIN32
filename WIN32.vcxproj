@@ -176,14 +176,14 @@
     <ClInclude Include="..\Lib_GripperFW\Application_Serialization.c">
       <FileType>CppCode</FileType>
     </ClInclude>
-    <ClCompile Include="..\ccOS\exeThread\exe_thread.cpp" />
-    <ClCompile Include="..\ccOS\osExecutionSystem\os_execution_system.cpp" />
     <ClInclude Include="..\Lib_GripperFW\apiModules\PacketInterfaceAPI.c">
       <FileType>CppCode</FileType>
     </ClInclude>
     <ClInclude Include="..\Lib_GripperFW\apiModules\ConsoleMenuAPI.c">
       <FileType>CppCode</FileType>
     </ClInclude>
+    <ClCompile Include="..\ccOS\exeThread\exe_thread.cpp" />
+    <ClCompile Include="..\ccOS\osExecutionSystem\os_execution_system.cpp" />
     <ClCompile Include="..\Lib_GripperFW\apiModules\ConsoleMenuAPI.cpp" />
     <ClCompile Include="..\Lib_GripperFW\apiModules\PacketInterfaceAPI.cpp" />
     <ClCompile Include="..\Lib_GripperFW\Application_Serialization.cpp" />

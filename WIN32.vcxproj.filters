@@ -16,20 +16,20 @@
     <Filter Include="Header Files\ccNOos">
       <UniqueIdentifier>{3613366a-fd54-408b-b56b-26d98faec721}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\ccOS">
-      <UniqueIdentifier>{30abd23a-b044-4227-9bfc-d904287c1b31}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Header Files\Lib_GripperFW">
       <UniqueIdentifier>{1996ea57-4f0d-481b-a629-2f062754ce57}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\ccNOos">
       <UniqueIdentifier>{c9bc41a2-59be-4778-a692-72859b6f2b50}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\ccOS">
-      <UniqueIdentifier>{3734e951-afa4-4321-8554-654589373693}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\Lib_GripperFW">
       <UniqueIdentifier>{90997a4f-9b3e-4107-ae11-37cb7f95b439}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ccOS">
+      <UniqueIdentifier>{887d4394-e313-4f17-84c2-564decc0d348}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ccOS">
+      <UniqueIdentifier>{7547ee96-fd49-48cb-a11f-5d07cc7140b5}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -57,23 +57,23 @@
     <ClCompile Include="..\ccNOos\computeModule\compute_module_class.cpp">
       <Filter>Source Files\ccNOos</Filter>
     </ClCompile>
-    <ClCompile Include="..\ccOS\osExecutionSystem\os_execution_system.cpp">
-      <Filter>Source Files\ccOS</Filter>
-    </ClCompile>
     <ClCompile Include="..\Lib_GripperFW\apiModules\PacketInterfaceAPI.cpp">
       <Filter>Source Files\Lib_GripperFW</Filter>
     </ClCompile>
     <ClCompile Include="..\Lib_GripperFW\apiModules\ConsoleMenuAPI.cpp">
       <Filter>Source Files\Lib_GripperFW</Filter>
     </ClCompile>
-    <ClCompile Include="..\ccOS\exeThread\exe_thread.cpp">
-      <Filter>Source Files\ccOS</Filter>
-    </ClCompile>
     <ClCompile Include="..\Lib_GripperFW\deviceModules\SmartMotorsDEV.cpp">
       <Filter>Source Files\Lib_GripperFW</Filter>
     </ClCompile>
     <ClCompile Include="..\Lib_GripperFW\deviceModules\SuctionExtentionDEV.cpp">
       <Filter>Source Files\Lib_GripperFW</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ccOS\osExecutionSystem\os_execution_system.cpp">
+      <Filter>Source Files\ccOS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ccOS\exeThread\exe_thread.cpp">
+      <Filter>Source Files\ccOS</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -128,15 +128,6 @@
     <ClInclude Include="..\ccNOos\computeModule\compute_module.h">
       <Filter>Header Files\ccNOos</Filter>
     </ClInclude>
-    <ClInclude Include="..\ccOS\osExecutionSystem\os_execution_system.hpp">
-      <Filter>Header Files\ccOS</Filter>
-    </ClInclude>
-    <ClInclude Include="..\ccOS\osExecutionSystem\version_config.hpp">
-      <Filter>Header Files\ccOS</Filter>
-    </ClInclude>
-    <ClInclude Include="..\ccOS\exeThread\exe_thread.hpp">
-      <Filter>Header Files\ccOS</Filter>
-    </ClInclude>
     <ClInclude Include="..\Lib_GripperFW\apiModules\PacketInterfaceAPI.h">
       <Filter>Header Files\Lib_GripperFW</Filter>
     </ClInclude>
@@ -160,6 +151,15 @@
     </ClInclude>
     <ClInclude Include="..\Lib_GripperFW\deviceModules\SuctionExtentionDEV.c">
       <Filter>Header Files\Lib_GripperFW</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ccOS\osExecutionSystem\version_config.hpp">
+      <Filter>Header Files\ccOS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ccOS\osExecutionSystem\os_execution_system.hpp">
+      <Filter>Header Files\ccOS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ccOS\exeThread\exe_thread.hpp">
+      <Filter>Header Files\ccOS</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

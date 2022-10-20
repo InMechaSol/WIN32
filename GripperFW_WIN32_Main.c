@@ -44,12 +44,16 @@ MODdeclareDATA(Mn);
 
 struct devicedatastruct PacketsInterfactDevDataStruct;
 struct devicedatastruct ConsoleMenuDevDataStruct;
+struct devicedatastruct SmartMotorsDevDataStruct[NUMMOTORS];
 
 
 ///////////////////////////////////////////////////////////////////////
 // Platform and Application Specific IO Device Functions
 void linkAPIioDevices(struct ccGripperStruct* gripperStructPtrIn)
 {
+    int i;
+    for (i=0; i<NUMMOTORS; i++)
+        gripperStructPtrIn->SmartMotors[i].devptr = &SmartMotorsDevDataStruct[i];
     gripperStructPtrIn->ConsoleMenu.devptr = &ConsoleMenuDevDataStruct;
     gripperStructPtrIn->PacketsAPI.devptr = &PacketsInterfactDevDataStruct;
     ConsoleMenuDevDataStruct.triggerWriteOperation = ui8TRUE;
@@ -123,6 +127,15 @@ void ReadConfigLine(struct configStruct* configStructPtrin)
 }
 
 
+
+void readMotorData(struct smartMotorStruct* smartMotorStructPtrIn)
+{
+    ;
+}
+void writeMotorData(struct smartMotorStruct* smartMotorStructPtrIn)
+{
+    ;
+}
 
 ///////////////////////////////////////////////////////////////////////
 // Application Data Instances are Created here (Platform Specific)
