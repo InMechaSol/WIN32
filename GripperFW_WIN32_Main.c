@@ -59,6 +59,10 @@ void linkAPIioDevices(struct ccGripperStruct* gripperStructPtrIn)
     ConsoleMenuDevDataStruct.triggerWriteOperation = ui8TRUE;
     gripperStructPtrIn->ConsoleMenu.showHelp = ui8TRUE;    
 }
+
+UI_32 getMillis() { 
+    return getuSecTicks()/1000; }
+
 std::thread stdInThread;
 UI_8 stdInThreadRunning = ui8FALSE;
 bool runONCE = true; // to launch std::in thread once
@@ -139,6 +143,7 @@ void writeMotorData(struct smartMotorStruct* smartMotorStructPtrIn)
 
 ///////////////////////////////////////////////////////////////////////
 // Application Data Instances are Created here (Platform Specific)
+ccGripperVersionsTemplate
 #ifdef __cplusplus
 theApplicationClass theApplicationExample;
 #else
