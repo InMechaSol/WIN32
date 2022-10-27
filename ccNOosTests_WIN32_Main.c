@@ -36,6 +36,7 @@
 //   -Declared from Macro Template
 //   -Macro Template is Defined in the Application Solution Header
 ///////////////////////////////////////////////////////////////////////
+
 #ifdef __cplusplus
 PLATFORM_APP_CLASS(Mn);
 #else
@@ -44,21 +45,22 @@ MODdeclareDATA(Mn);
 
 struct devicedatastruct PacketsInterfactDevDataStruct;
 struct devicedatastruct ConsoleMenuDevDataStruct;
-struct devicedatastruct SmartMotorsDevDataStruct[NUMMOTORS];
 
 
 ///////////////////////////////////////////////////////////////////////
 // Platform and Application Specific IO Device Functions
-void linkAPIioDevices(struct ccGripperStruct* gripperStructPtrIn)
+void linkAPIioDevices(struct ccNOosTestsStruct* NOosTestsStructPtrIn)
 {
-    int i;
-    for (i=0; i<NUMMOTORS; i++)
-        gripperStructPtrIn->SmartMotors[i].devptr = &SmartMotorsDevDataStruct[i];
-    gripperStructPtrIn->ConsoleMenu.devptr = &ConsoleMenuDevDataStruct;
-    gripperStructPtrIn->PacketsAPI.devptr = &PacketsInterfactDevDataStruct;
+    NOosTestsStructPtrIn->ConsoleMenu.devptr = &ConsoleMenuDevDataStruct;
+    NOosTestsStructPtrIn->PacketsAPI.devptr = &PacketsInterfactDevDataStruct;
     ConsoleMenuDevDataStruct.triggerWriteOperation = ui8TRUE;
-    gripperStructPtrIn->ConsoleMenu.showHelp = ui8TRUE;    
+    NOosTestsStructPtrIn->ConsoleMenu.showHelp = ui8TRUE;    
 }
+
+UI_32 getMillis() {
+    return getuSecTicks() / 1000;
+}
+
 std::thread stdInThread;
 UI_8 stdInThreadRunning = ui8FALSE;
 bool runONCE = true; // to launch std::in thread once
@@ -139,6 +141,7 @@ void writeMotorData(struct smartMotorStruct* smartMotorStructPtrIn)
 
 ///////////////////////////////////////////////////////////////////////
 // Application Data Instances are Created here (Platform Specific)
+ccNOosTestsVersionsTemplate
 #ifdef __cplusplus
 theApplicationClass theApplicationExample;
 #else
@@ -147,6 +150,7 @@ PLATFORM_APP_CTEMPLATE(Mn)
 
 ////////////////////////////////////////////////////////////////////////////////
 // Platform Main Entry Points call ExeSys Area Functions
+
 #ifdef MAIN_C_NOos_Wsystick
 C_NOos_MAINnSYSTICK_TEMPLATE
 #endif

@@ -1,4 +1,4 @@
-#include "GripperFW_WIN32_Main.c"
+#include "ccNOosTests_WIN32_Main.c"
 
 #ifdef MAIN_CPP_NOos_NOsystick
 CPP_OS_MAIN_TEMPLATE

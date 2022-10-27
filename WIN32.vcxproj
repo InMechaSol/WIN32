@@ -21,7 +21,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{a7caa36d-cf8c-45b1-804f-07a7aa56b3fc}</ProjectGuid>
+    <ProjectGuid>{A24DCCA6-5491-4880-956B-5BF8D03D86F6}</ProjectGuid>
     <RootNamespace>WIN32</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
@@ -89,7 +89,7 @@
       <PreprocessorDefinitions>
       </PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>..\ccNOos\executionSystem;..\ccNOos\consoleMenu;..\ccNOos\computeModule;..\ccNOos\ioDevice;..\ccNOos\packetsAPI;..\ccOS\ccLibs\iq-module-communication-cpp\inc;..\Lib_GripperFW;..\ccNOos\tests\testPlatforms;..\ccOS\osExecutionSystem;..\ccOS\exeThread;..\Lib_GripperFW\apiModules;..\Lib_GripperFW\deviceModules;..\Lib_GripperFW\controlModules</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\ccNOos\executionSystem;..\ccNOos\consoleMenu;..\ccNOos\computeModule;..\ccNOos\ioDevice;..\ccNOos\packetsAPI;..\Tests;..\ccNOos\tests\testPlatforms;..\ccOS\osExecutionSystem;..\ccOS\exeThread;..\Tests\apiModules;..\Tests\deviceModules</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -97,7 +97,7 @@
       <AdditionalDependencies>ws2_32.lib; $(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
-      <Command>$(SolutionDir)DeployProject\DeployProject.exe $(SolutionDir)CR\Lib_GripperFW_Tests
+      <Command>$(SolutionDir)DeployProject\DeployProject.exe $(SolutionDir)CR\ccNOos_Tests
 </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
@@ -110,7 +110,7 @@
       <PreprocessorDefinitions>
       </PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>..\ccNOos\executionSystem;..\ccNOos\consoleMenu;..\ccNOos\computeModule;..\ccNOos\ioDevice;..\ccNOos\packetsAPI;..\ccOS\ccLibs\iq-module-communication-cpp\inc;..\Lib_GripperFW;..\ccNOos\tests\testPlatforms;..\ccOS\osExecutionSystem;..\ccOS\exeThread;..\Lib_GripperFW\apiModules;..\Lib_GripperFW\deviceModules;..\Lib_GripperFW\controlModules</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\ccNOos\executionSystem;..\ccNOos\consoleMenu;..\ccNOos\computeModule;..\ccNOos\ioDevice;..\ccNOos\packetsAPI;..\Tests;..\ccNOos\tests\testPlatforms;..\ccOS\osExecutionSystem;..\ccOS\exeThread;..\Tests\apiModules;..\Tests\deviceModules</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -120,7 +120,7 @@
       <AdditionalDependencies>ws2_32.lib; $(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
-      <Command>$(SolutionDir)DeployProject\DeployProject.exe $(SolutionDir)CR\Lib_GripperFW_Tests
+      <Command>$(SolutionDir)DeployProject\DeployProject.exe $(SolutionDir)CR\ccNOos_Tests
 </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
@@ -167,30 +167,36 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\Tests\apiModules\ConsoleMenuAPI.h" />
+    <ClInclude Include="..\Tests\apiModules\PacketInterfaceAPI.h" />
+    <ClInclude Include="..\Tests\Application_Serialization.h" />
+    <ClInclude Include="..\Tests\Application_Solution.h" />
+    <ClInclude Include="ccNOosTests_WIN32_Main.c">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="..\Tests\Application_Serialization.c">
+      <FileType>CppHeader</FileType>
+    </ClInclude>
+    <ClInclude Include="..\Tests\apiModules\ConsoleMenuAPI.c">
+      <FileType>CppHeader</FileType>
+    </ClInclude>
+    <ClCompile Include="..\Tests\apiModules\ConsoleMenuAPI.cpp" />
+    <ClInclude Include="..\Tests\apiModules\PacketInterfaceAPI.c">
+      <FileType>CppHeader</FileType>
+    </ClInclude>
+    <ClCompile Include="..\Tests\apiModules\PacketInterfaceAPI.cpp" />
+    <ClCompile Include="..\Tests\Application_Serialization.cpp" />
+    <ClInclude Include="..\Tests\Application_Solution.c">
+      <FileType>CppHeader</FileType>
+    </ClInclude>
+    <ClCompile Include="..\Tests\Application_Solution.cpp" />
+    <ClCompile Include="ccNOosTests_WIN32_Main.cpp" />
     <ClInclude Include="..\ccNOos\tests\testPlatforms\Platform_ccOS.hpp" />
     <ClInclude Include="..\ccOS\exeThread\exe_thread.hpp" />
     <ClInclude Include="..\ccOS\osExecutionSystem\os_execution_system.hpp" />
     <ClInclude Include="..\ccOS\osExecutionSystem\version_config.hpp" />
-    <ClInclude Include="..\Lib_GripperFW\apiModules\ConsoleMenuAPI.h" />
-    <ClInclude Include="..\Lib_GripperFW\apiModules\PacketInterfaceAPI.h" />
-    <ClInclude Include="..\Lib_GripperFW\Application_Serialization.c">
-      <FileType>CppCode</FileType>
-    </ClInclude>
-    <ClInclude Include="..\Lib_GripperFW\apiModules\PacketInterfaceAPI.c">
-      <FileType>CppCode</FileType>
-    </ClInclude>
-    <ClInclude Include="..\Lib_GripperFW\apiModules\ConsoleMenuAPI.c">
-      <FileType>CppCode</FileType>
-    </ClInclude>
     <ClCompile Include="..\ccOS\exeThread\exe_thread.cpp" />
     <ClCompile Include="..\ccOS\osExecutionSystem\os_execution_system.cpp" />
-    <ClCompile Include="..\Lib_GripperFW\apiModules\ConsoleMenuAPI.cpp" />
-    <ClCompile Include="..\Lib_GripperFW\apiModules\PacketInterfaceAPI.cpp" />
-    <ClCompile Include="..\Lib_GripperFW\Application_Serialization.cpp" />
-    <ClInclude Include="..\Lib_GripperFW\Application_Solution.c">
-      <FileType>CppCode</FileType>
-    </ClInclude>
-    <ClCompile Include="..\Lib_GripperFW\Application_Solution.cpp" />
     <ClInclude Include="..\ccNOos\packetsAPI\packets_api.c">
       <FileType>CppCode</FileType>
     </ClInclude>
@@ -213,22 +219,8 @@
       <FileType>CppCode</FileType>
     </ClInclude>
     <ClCompile Include="..\ccNOos\executionSystem\execution_system_class.cpp" />
-    <ClInclude Include="..\Lib_GripperFW\deviceModules\SmartMotorsDEV.c">
-      <FileType>CppCode</FileType>
-    </ClInclude>
-    <ClCompile Include="..\Lib_GripperFW\deviceModules\SmartMotorsDEV.cpp" />
-    <ClInclude Include="..\Lib_GripperFW\deviceModules\SuctionExtentionDEV.c">
-      <FileType>CppCode</FileType>
-    </ClInclude>
-    <ClCompile Include="..\Lib_GripperFW\deviceModules\SuctionExtentionDEV.cpp" />
-    <ClCompile Include="GripperFW_WIN32_Main.cpp" />
     <ClInclude Include="..\ccNOos\ioDevice\io_device.h" />
     <ClInclude Include="..\ccNOos\packetsAPI\packets_api.h" />
-    <ClInclude Include="..\Lib_GripperFW\Application_Serialization.h" />
-    <ClInclude Include="..\Lib_GripperFW\Application_Solution.h" />
-    <ClInclude Include="..\Lib_GripperFW\deviceModules\SmartMotorsDEV.h" />
-    <ClInclude Include="..\Lib_GripperFW\deviceModules\SuctionExtentionDEV.h" />
-    <ClInclude Include="GripperFW_WIN32_Main.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\ccNOos\executionSystem\execution_system.h" />
