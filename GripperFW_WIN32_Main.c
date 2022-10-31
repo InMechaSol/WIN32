@@ -130,7 +130,14 @@ void ReadConfigLine(struct configStruct* configStructPtrin)
     ;
 }
 
-
+void WritePacketBytes(struct packAPIStruct* uiStructPtrin)
+{
+    ;
+}
+void ReadPacketBytes(struct packAPIStruct* uiStructPtrin)
+{
+    ;
+}
 
 void readMotorData(struct smartMotorStruct* smartMotorStructPtrIn)
 {
