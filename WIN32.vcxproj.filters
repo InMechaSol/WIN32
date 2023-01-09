@@ -75,6 +75,9 @@
     <ClCompile Include="..\ccOS\exeThread\exe_thread.cpp">
       <Filter>Source Files\ccOS</Filter>
     </ClCompile>
+    <ClCompile Include="..\ccNOos\ccLibs\mcs\motionControl.cpp">
+      <Filter>Source Files\ccNOos</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Lib_GripperFW\Application_Serialization.h">
@@ -160,6 +163,12 @@
     </ClInclude>
     <ClInclude Include="..\ccOS\exeThread\exe_thread.hpp">
       <Filter>Header Files\ccOS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ccNOos\ccLibs\mcs\motionControl.h">
+      <Filter>Header Files\ccNOos</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ccNOos\ccLibs\mcs\motionControl.c">
+      <Filter>Header Files\ccNOos</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

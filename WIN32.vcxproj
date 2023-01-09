@@ -89,7 +89,7 @@
       <PreprocessorDefinitions>
       </PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>..\ccNOos\executionSystem;..\ccNOos\consoleMenu;..\ccNOos\computeModule;..\ccNOos\ioDevice;..\ccNOos\packetsAPI;..\ccOS\ccLibs\iq-module-communication-cpp\inc;..\Lib_GripperFW;..\ccNOos\tests\testPlatforms;..\ccOS\osExecutionSystem;..\ccOS\exeThread;..\Lib_GripperFW\apiModules;..\Lib_GripperFW\deviceModules;..\Lib_GripperFW\controlModules</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\ccNOos\executionSystem;..\ccNOos\consoleMenu;..\ccNOos\computeModule;..\ccNOos\ioDevice;..\ccNOos\packetsAPI;..\ccOS\ccLibs\iq-module-communication-cpp\inc;..\Lib_GripperFW;..\ccNOos\tests\testPlatforms;..\ccOS\osExecutionSystem;..\ccOS\exeThread;..\Lib_GripperFW\apiModules;..\Lib_GripperFW\deviceModules;..\Lib_GripperFW\controlModules;..\ccNOos\ccLibs\mcs</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -167,6 +167,7 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\ccNOos\ccLibs\mcs\motionControl.h" />
     <ClInclude Include="..\ccNOos\tests\testPlatforms\Platform_ccOS.hpp" />
     <ClInclude Include="..\ccOS\exeThread\exe_thread.hpp" />
     <ClInclude Include="..\ccOS\osExecutionSystem\os_execution_system.hpp" />
@@ -182,6 +183,10 @@
     <ClInclude Include="..\Lib_GripperFW\apiModules\ConsoleMenuAPI.c">
       <FileType>CppCode</FileType>
     </ClInclude>
+    <ClInclude Include="..\ccNOos\ccLibs\mcs\motionControl.c">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClCompile Include="..\ccNOos\ccLibs\mcs\motionControl.cpp" />
     <ClCompile Include="..\ccOS\exeThread\exe_thread.cpp" />
     <ClCompile Include="..\ccOS\osExecutionSystem\os_execution_system.cpp" />
     <ClCompile Include="..\Lib_GripperFW\apiModules\ConsoleMenuAPI.cpp" />
