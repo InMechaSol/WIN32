@@ -168,6 +168,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="..\ccNOos\ccLibs\mcs\motionControl.h" />
+    <ClInclude Include="..\ccNOos\ccLibs\mcs\motionControlSerialize.h" />
     <ClInclude Include="..\ccNOos\tests\testPlatforms\Platform_ccOS.hpp" />
     <ClInclude Include="..\ccOS\exeThread\exe_thread.hpp" />
     <ClInclude Include="..\ccOS\osExecutionSystem\os_execution_system.hpp" />
@@ -187,6 +188,10 @@
       <FileType>CppCode</FileType>
     </ClInclude>
     <ClCompile Include="..\ccNOos\ccLibs\mcs\motionControl.cpp" />
+    <ClInclude Include="..\ccNOos\ccLibs\mcs\motionControlSerialize.c">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClCompile Include="..\ccNOos\ccLibs\mcs\motionControlSerialize.cpp" />
     <ClCompile Include="..\ccOS\exeThread\exe_thread.cpp" />
     <ClCompile Include="..\ccOS\osExecutionSystem\os_execution_system.cpp" />
     <ClCompile Include="..\Lib_GripperFW\apiModules\ConsoleMenuAPI.cpp" />
