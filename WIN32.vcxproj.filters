@@ -179,5 +179,8 @@
     <ClInclude Include="..\ccNOos\ccLibs\mcs\motionControlSerialize.c">
       <Filter>Header Files\ccNOos</Filter>
     </ClInclude>
+    <ClInclude Include="..\ccNOos\ccLibs\abstractMATH.h">
+      <Filter>Header Files\ccNOos</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
